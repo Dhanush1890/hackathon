@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Waste Heroes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>♻️ E-Waste Heroes – Virtual Recycling Metaverse</h1>
+        <nav>
+            <ul>
+                <li><a href="#game">Virtual Recycling City</a></li>
+                <li><a href="#ai-detection">AI Waste Sorting</a></li>
+                <li><a href="#ar">Find Bins (AR)</a></li>
+                <li><a href="#leaderboard">Leaderboard</a></li>
+                <li><a href="#chat">Community Hub</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <button onclick="toggleDarkMode()">🌙 Toggle Dark Mode</button>
+
+    <section id="game">
+        <h2>🕹️ Explore the Virtual Recycling City</h2>
+        <canvas id="gameCanvas"></canvas>
+    </section>
+
+    <section id="ai-detection">
+        <h2>🤖 AI Waste Sorting</h2>
+        <input type="file" id="wasteImage" accept="image/*">
+        <button onclick="analyzeImage()">Detect Waste</button>
+        <p id="ai-result">Upload an image to detect e-waste.</p>
+    </section>
+
+    <section id="ar">
+        <h2>📍 Find E-Waste Bins with AR</h2>
+        <button onclick="startAR()">Start AR</button>
+        <video id="ar-view" autoplay></video>
+    </section>
+
+    <section id="leaderboard">
+        <h2>🏆 Eco-Hero Leaderboard</h2>
+        <h2>1. AKSHAY</h2>
+        <h2>2. DHANUSH</h2>
+        <h2>3. MAHA</h2>
+        <h2>4. DIVYA</h2>
+        <ul id="leaderboard-list"></ul>
+    </section>
+
+    <section id="chat">
+        <h2>💬 Live Community Hub</h2>
+        <div id="chat-box"></div>
+        <input type="text" id="chat-input" placeholder="Type a message...">
+        <button onclick="sendMessage()">Send</button>
+    </section>
+
+    <script src="script.js"></script>
+    <script src="game.js"></script>
+    <script src="leaderboard.js"></script>
+    <script src="chat.js"></script>
+    <script src="ai-detection.js"></script>
+    <script src="ar.js"></script>
+</body>
+</html>
