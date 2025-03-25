@@ -1,0 +1,162 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f4f4f4;
+    text-align: center;
+    margin: 0;
+    transition: background 0.5s ease-in-out;
+    background-image:url("https://img.freepik.com/premium-photo/glowing-recycling-icon-sorting-recycling-environmental-lending-concept-world-recycling-day-sign_49553-5168.jpg");
+    background-position: center;
+}
+
+
+/* Header */
+header {
+    background: #4CAF50;
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: yellow;
+}
+
+/* Sections */
+section {
+    margin: 30px auto;
+    padding: 30px;
+    background: ghostwhite;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Buttons */
+button {
+    background: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+button:hover {
+    background: #45a049;
+    transform: scale(1.05);
+}
+
+/* Virtual City Canvas */
+#gameCanvas {
+    width: 100%;
+    height: 400px;
+    background: #ccc;
+    border: 2px solid #333;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* AI Waste Detection */
+#ai-detection {
+    border: 2px solid #4CAF50;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Leaderboard */
+#leaderboard ul {
+    list-style: none;
+    padding: 0;
+    
+}
+
+#leaderboard ul li {
+    background: #ddd;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: transform 0.2s ease-in-out;
+}
+
+#leaderboard ul li:hover {
+    transform: scale(1.05);
+    background: lightgreen;
+}
+
+/* Live Chat */
+#chat-box {
+    height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background: #f9f9f9;
+}
+
+#chat-input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background: #222;
+    color: white;
+}
+
+.dark-mode section {
+    background: #333;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.2);
+}
+
+.dark-mode button {
+    background: yellow;
+    color: black;
+}
+
+.dark-mode button:hover {
+    background: orange;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
